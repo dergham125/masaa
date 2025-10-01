@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MASA Tech - Achievement Elegant</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+<style>
+/* ================= GLOBAL RESET ================= */
+*{margin:0;padding:0;box-sizing:border-box;}
+body,html{width:100%;height:100%;font-family:'Poppins',sans-serif;overflow-x:hidden;}
+
+/* ================= BACKGROUND ================= */
+body{
+  background:linear-gradient(-45deg,#fdf6f0,#e6d2c2,#d8b4a6,#c9a798);
+  background-size:600% 600%;
+  animation:elegantGradient 25s ease infinite;
+  color:#4b2e2e;
+}
+@keyframes elegantGradient{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* ================= HEADER ================= */
+header{
+  width:100%;padding:20px 60px;display:flex;justify-content:space-between;align-items:center;
+  backdrop-filter:blur(8px);background:rgba(245,240,235,0.8);position:sticky;top:0;z-index:999;
+  border-bottom:1px solid #bfa6a0;
+}
+header h1{font-size:42px;font-weight:900;color:#7b3f45;}
+nav a{color:#5a3d3b;text-decoration:none;margin-left:25px;font-weight:500;transition:0.3s;}
+nav a:hover{color:#a87b7b;}
+
+/* ================= HERO ================= */
+.hero{
+  min-height:90vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+  padding:100px 20px;
+}
+.hero h2{font-size:36px;color:#7b3f45;margin-bottom:25px;}
+.hero p{font-size:20px;max-width:800px;line-height:1.7;margin-bottom:50px;color:#4b2e2e;}
+
+/* ================= STATS GRID ================= */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;max-width:1000px;margin:0 auto 70px;padding:0 20px;}
+.card{
+  background:rgba(245,240,235,0.7);padding:35px;border-radius:20px;text-align:center;
+  backdrop-filter:blur(6px);transition:0.4s;cursor:pointer;
+}
+.card i{font-size:45px;margin-bottom:15px;color:#a87b7b;}
+.card h3{font-size:22px;color:#7b3f45;margin-bottom:12px;}
+.card p{font-size:18px;color:#5a3d3b;}
+.card:hover{transform:translateY(-5px) scale(1.02);}
+
+/* ================= CODE EFFECT ================= */
+.code-box{
+  background:#2d2d2d;color:#f1f1f1;border-radius:12px;padding:20px;
+  font-family:monospace;font-size:15px;max-width:700px;margin:30px auto;overflow-x:auto;
+  box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+.code-box span.keyword{color:#cc99cd;}
+.code-box span.func{color:#6699cc;}
+.code-box span.string{color:#f08d49;}
+.code-box span.comment{color:#999;font-style:italic;}
+
+/* ================= SHOWCASE ================= */
+.showcase{padding:100px 20px;text-align:center;background:rgba(245,240,235,0.5);}
+.showcase h2{font-size:34px;margin-bottom:40px;color:#7b3f45;}
+.badges{display:flex;justify-content:center;flex-wrap:wrap;gap:40px;}
+.badge{width:130px;height:130px;border-radius:50%;background:#e6d2c2;
+  display:flex;align-items:center;justify-content:center;font-size:28px;font-weight:700;
+  color:#7b3f45;transition:0.3s;}
+.badge:hover{transform:scale(1.1);background:#d8b4a6;color:#5a3d3b;}
+
+/* ================= FOOTER ================= */
+footer{padding:60px 20px;text-align:center;background:rgba(245,240,235,0.6);}
+.socials a{color:#7b3f45;margin:0 20px;font-size:26px;transition:0.3s;}
+.socials a:hover{color:#a87b7b;}
+footer p{margin-top:15px;font-size:14px;color:#5a3d3b;}
+
+/* ================= BUTTON ================= */
+button{padding:12px 30px;border:none;border-radius:40px;background:#7b3f45;
+  color:#fdf6f0;cursor:pointer;font-weight:600;font-size:16px;transition:0.3s;}
+button:hover{background:#a87b7b;color:#fff;transform:scale(1.05);}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>MASA</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Programs</a>
+    <a href="#">Credentials</a>
+    <a href="#">Resources</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>🎉 Congratulations, Bilal Ibrahim Sobhy 🎉</h2>
+  <p>
+    You have successfully completed the <b>MASA Tech Professional Program</b> 
+    specializing in <b>Python Development</b> and <b>Networking Fundamentals</b>.  
+    This program combined powerful coding techniques with practical networking skills, 
+    enabling you to build, connect, and secure modern applications with confidence.  
+  </p>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="card"><i class="fas fa-code"></i><h3>Python Programming</h3><p>Advanced Scripting, Automation & APIs</p></div>
+    <div class="card"><i class="fas fa-network-wired"></i><h3>Networking Skills</h3><p>TCP/IP, Routing, Packet Analysis</p></div>
+    <div class="card"><i class="fas fa-shield-alt"></i><h3>Security Awareness</h3><p>Encryption, Firewalls & Secure Design</p></div>
+    <div class="card"><i class="fas fa-project-diagram"></i><h3>Capstone Project</h3><p>Integrated Python & Network Tools</p></div>
+  </div>
+
+  <h2 style="color:#5a3d3b;margin-top:20px;">Final Grade: Excellent</h2>
+  <button onclick="alert('Certificate Issued: Python & Networking Mastery 🏆')">Download Certificate</button>
+</section>
+
+<!-- CODE SNIPPET -->
+<div class="code-box">
+<pre>
+<span class="comment"># Python Networking Example</span>
+<span class="keyword">import</span> socket
+
+<span class="func">s</span> = socket.socket()
+s.connect((<span class="string">'masa-tech.org'</span>, <span class="string">443</span>))
+s.send(<span class="string">b'GET /certificate HTTP/1.1\r\nHost: masa-tech.org\r\n\r\n'</span>)
+print(s.recv(<span class="string">1024</span>))
+</pre>
+</div>
+
+<!-- SHOWCASE -->
+<section class="showcase">
+  <h2>Your Verified Digital Badges</h2>
+  <div class="badges">
+    <div class="badge">🐍 Python</div>
+    <div class="badge">🌐 Networking</div>
+    <div class="badge">🔒 Security</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Connect with MASA Tech</p>
+  <div class="socials">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+  <p>© 2025 MASA Tech. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
